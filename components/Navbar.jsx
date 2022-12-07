@@ -5,6 +5,7 @@ import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
 import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {useRouter} from 'next/router'
+import TBLogo from '../public/assets/navLogo.png'
 
 
 const Navbar = () => {
@@ -45,7 +46,7 @@ const Navbar = () => {
     <div style={{backgroundColor:`${navBg}`}} className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
-          <Image src="/../public/assets/navLogo.png" alt="/" width='125' height='50'/>
+          <Image src={TBLogo} alt="/" width='125' height='50'/>
         </Link>
         <div>
           <ul className='hidden md:flex'>
@@ -77,7 +78,7 @@ const Navbar = () => {
           <div>
             <div className='flex w-full items-center justify-between -ml-4'>
               <Link href='/'>
-                <Image src='/../public/assets/navLogo.png' alt='/' width='87' height='35'/>
+                <Image src={TBLogo} alt='/' width='87' height='35'/>
               </Link>
               <div onClick={handleNav} className='rounded-full shadow-lg shadow-black p-3 cursor-pointer -mr-4'>
                 <AiOutlineClose />
